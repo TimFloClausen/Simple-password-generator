@@ -1,4 +1,4 @@
-import random
+import secrets
 import string
 
 print("Hello, welcome to this password generator")
@@ -20,7 +20,7 @@ while True:
     password = ""
 
     for i in range(length) :
-        password += random.choice(chars)
+        password += secrets.choice(chars)
 
     print("Your random password is:", password)   
 
